@@ -1,0 +1,16 @@
+
+
+- id: related_posts_title
+  translation: 相關文章
+
+- id: categories_title
+  translation: Categories
+
+- id: tags_title
+  translation: Tags
+
+- id: recent_posts_title
+  translation: 最近文章
+
+- id: archives_title
+  translation: Archives
