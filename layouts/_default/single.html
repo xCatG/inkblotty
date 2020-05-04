@@ -4,7 +4,7 @@
     <article role="article" class="post type-post format-standard hentry">
         <header class="post-header">
             <h1>{{ .Title | markdownify }}</h1>
-            <div class="post-details">
+            <div class="post-details" style="overflow: hidden;">
                 <a rel="bookmark">
                     <time datetime="{{ .Date.Format "2006-01-02T12:34:56" }}">{{ .Date.Format "2006-01-02" }}</time>
                 </a>

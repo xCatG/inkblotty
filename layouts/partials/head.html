@@ -20,6 +20,15 @@
             background: none !important;
             padding: 0 !important;
         }
+
+        body {
+            font-family: '{{ .Site.Params.body_font }}';
+          }
+      
+          h1, h2, h3, h4, h5, h6 {
+            font-family: '{{ .Site.Params.heading_font }}';
+          }
+      
     </style>
     <link rel='stylesheet' href='{{ "css/style.css" | absURL }}' type='text/css' media='all' />
     <link rel='stylesheet' href='{{ "css/custom.css" | absURL }}' type='text/css' media='all' />
