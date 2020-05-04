@@ -33,6 +33,10 @@ summaryLength=150
 
 [Params]
   readmore = true
+  renderCategory = true
+  renderTag = true
+  renderRecents = true
+  renderArchive = true
 
 [outputs]                          # c.f. https://gohugo.io/templates/output-formats/
   home = ["HTML", "RSS"]
