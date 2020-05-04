@@ -4,10 +4,10 @@
   translation: 相關文章
 
 - id: categories_title
-  translation: Categories
+  translation: 類別
 
 - id: tags_title
-  translation: Tags
+  translation: 標籤
 
 - id: recent_posts_title
   translation: 最近文章
