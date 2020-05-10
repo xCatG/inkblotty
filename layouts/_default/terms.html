@@ -1,0 +1,15 @@
+{{- define "main" -}}
+<main aria-role="main">
+<header class="homepage-header">
+  <h1>{{.Title | markdownify }}</h1>
+  {{ with .Params.subtitle }}
+  <span class="subtitle">{{.}}</span>
+  {{ end }}
+</header>
+<div class="post-content">
+{{ range .Data.Terms.Alphabetical }}
+  <p><a href="{{ .Page.RelPermalink }}"><code>{{ .Page.Title }}</code></a>&emsp;{{ .Count }}</p>
+{{ end }}
+</div>
+</main>
+{{- end -}}
