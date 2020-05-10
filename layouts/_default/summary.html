@@ -8,7 +8,7 @@
 	{{- end }}
 	<div class="list__content clearfix">
 		<header class="post-header">
-				<h2><a href="{{ .RelPermalink }}" rel="bookmark">{{ .Title | markdownify }}</a></h2>
+				<h2><a href="{{ .RelPermalink }}" rel="bookmark">{{if .Draft}}DRAFT-{{end}}{{ .Title | markdownify }}</a></h2>
 				{{- if not .Date.IsZero }}
 				<div class="post-details">
 				<a rel="bookmark">
