@@ -36,17 +36,20 @@
                 </span>
                 {{ end }}
         
-                {{ $tags := .Params.tags }}
+                <span class="post-tags">
+                {{ partial "tags" . }}
+                </span>
+                {{/*  {{ $tags := .Params.tags }}
                 {{ $all_tags := .Site.Taxonomies.tags }}
                 {{ with $tags }}
                 <span class="post-tags">
                     {{- range $all_tags -}}
                         {{ if in $tags .Page.Title }}
-                        <a href="{{- .Page.Permalink -}}">{{ .Page.Title }}</a>&emsp;
+                        <code><a href="{{- .Page.Permalink -}}">{{ .Page.Title }}</a></code>&emsp;
                         {{ end }}
                     {{- end }}
                 </span>
-                {{ end }}
+                {{ end }}  */}}
         </footer>
         {{ partial "ad_double_rectangle.html" . }}
         {{ partial "relatedposts.html" . }}

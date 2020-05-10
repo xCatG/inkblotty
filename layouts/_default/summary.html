@@ -46,8 +46,10 @@
 			{{- end }}
 		</span>
 		{{ end }}
-
-		{{ $tags := .Params.tags }}
+		<span class="post-tags">
+		{{ partial "tags" . }}
+		</span>
+		{{/*  {{ $tags := .Params.tags }}
 		{{ $all_tags := .Site.Taxonomies.tags }}
 		{{ with $tags }}
 		<span class="post-tags">
@@ -57,7 +59,7 @@
 				{{ end }}
 			{{- end }}
 		</span>
-		{{ end }}
+		{{ end }}  */}}
 	</footer>
 
 </article>
