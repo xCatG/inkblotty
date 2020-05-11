@@ -111,10 +111,10 @@ iframe {
 
 @media screen and (max-width: 40em) {
     div .nav-previous {
-        display: none;
+        padding-bottom: 0;
     }
     div .nav-next {
-        display: none;
+        padding-top: 0.4rem;
     }
 }
 
