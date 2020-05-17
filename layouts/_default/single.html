@@ -6,11 +6,11 @@
             <h1>{{if .Draft}}DRAFT-{{end}}{{ .Title | markdownify }}</h1>
             <div class="post-details" style="overflow: hidden;">
                 <a rel="bookmark">
-                    <time datetime="{{ .Date.Format "2006-01-02T12:34:56" }}">{{ .Date.Format "2006-01-02" }}</time>
+                    <time datetime="{{ .Date.UTC.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.UTC.Format ( .Site.Params.customDateFormat | default "2006-01-02") }}</time>
                 </a>
 				{{- if lt .Date .Lastmod }}
 				<a rel="bookmark">
-					<time datetime="{{ .Lastmod.Format "2006-01-02T12:34:56" }}">(Last Modified: {{.Lastmod.Format ( .Site.Params.dateformat | default "2006-01-02")}})</time>
+					<time datetime="{{ .Lastmod.UTC.Format "2006-01-02T15:04:05Z07:00" }}">(Last Modified: {{.Lastmod.UTC.Format ( .Site.Params.customDateFormat | default "2006-01-02")}})</time>
 				</a>
                 {{- end }}
 				{{ partial "share.html" . }}
