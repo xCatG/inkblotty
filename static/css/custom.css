@@ -156,3 +156,20 @@ code {
   border-radius: 4px;
   font-size: .9em;
 }
+
+.pixiv-embed {
+    max-width: 100%;
+    display: inline-block;
+    iframe {
+      max-width: 100%;
+    };
+    &[data-size*="large"] {
+      text-align: center;
+    }
+}
+  
+.pixiv-embed-title,
+.pixiv-embed-meta {
+    display: none;
+}
+  
