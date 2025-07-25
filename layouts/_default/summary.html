@@ -24,6 +24,10 @@
 		</header>
 
 		<div class="post-excerpt"><p>
+			{{- if .Description}}
+			<p>{{ .Description}}</p>
+			{{- end}}
+
 			{{ .Summary }} 
 
 			{{- if .Site.Params.readmore }}
